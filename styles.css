@@ -75,21 +75,27 @@ header {
 }  
 
 /* global styles */
-a {
+a, a:hover, a:focus, a:visited {
+    color: #626fc1;
     text-decoration: solid;
 }
 
-a:visited {
-    color: #626fc1;
+html {
+    height: 100%;
 }
 
 body {
-    background-color: #fefefd;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #fff; /* #fefefd */
     color: #626fc1;
     font-family: system-ui, sans-serif;
     line-height: 1.5; 
     font-weight: 400;
     text-align: center;
+    height: 100%;
+    text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .2);
+    box-shadow: inset 0 0 5rem rgba(0, 0, 0, .125);
 }
 
 h3 {
