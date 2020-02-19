@@ -1,65 +1,9 @@
 /* class styles*/
-#faceshot-image {
-    border-radius: 40%;
-
-    /* width and height */
-    width: 200px;
-    height: 200px;
-}
-
-#faceshot, header, #bodytext, footer {
-    display: block;
-}
-
 #linkedin-icon, #email-icon, #github-icon {
     width: 50px;
 }
 
-#faceshot {
-    /* border-color: #141414;
-    border-style: solid;
-    border-width: 1px; */
-
-    /* width and height */
-    width: 200px;
-    height: 200px;
-
-    margin-bottom: 0;
-    margin-top: 1%;
-    padding: 0;
-    position: absolute; 
-    top: 0; 
-    bottom: 0; 
-    left: 0; 
-    right: 0;
-    margin: 0 auto;
-    margin-top: 0.25%; 
-}
-
-header {
-    /* border-color: #141414;
-    border-style: solid;
-    border-width: 1px; */
-
-    /* width and height */
-    width: 300px;
-    height: 125px; 
-
-    position: absolute; 
-    margin-top: -2%;
-    margin: 0 auto;
-    margin-top: 15%;
-    top: 0; 
-    bottom: 0; 
-    left: 0; 
-    right: 0;
-} 
-
 #bodytext {
-    /* border-color: #141414;
-    border-style: solid;
-    border-width: 1px; */
-
     /* width and height */
     width: 80%;
     height: 25%;
@@ -75,6 +19,10 @@ header {
 }  
 
 /* global styles */
+img {
+    max-width: 100%;
+}
+
 a, a:hover, a:focus, a:visited {
     color: #626fc1;
     text-decoration: solid;
@@ -85,214 +33,32 @@ html {
 }
 
 body {
-    display: -ms-flexbox;
-    display: flex;
     background-color: #fff; /* #fefefd */
     color: #626fc1;
     font-family: system-ui, sans-serif;
     line-height: 1.5; 
     font-weight: 400;
-    text-align: center;
     height: 100%;
     text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .2);
     box-shadow: inset 0 0 5rem rgba(0, 0, 0, .125);
 }
 
-h3 {
-    font-weight: normal;
+.row {
+    text-align: center;
 }
 
-footer {
-    /* border-color: #141414;
-    border-style: solid;
-    border-width: 1px;
-     */
-     
-    width: 80%;
-
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 2%;
-    bottom: 0;
-    left: 0;
-    right: 0;
+.container {
+    display: flex;
+    width: 100%;
 }
 
-#github-icon {
-    margin-bottom:  1%;
+.col-md {
+    justify-content: center;
 }
 
 /* media queries */
-@media (max-width: 1200px) {
-    header {
-        margin-top: 20%;
-    }
-
-    #bodytext {
-        margin-top: 35%;
-    }
-} 
-
-@media (max-width: 867px) {
-    #faceshot-image {
-        width: 200px;
-        height: 200px;
-    }
-
-    #faceshot {
-        width: 200px;
-        height: 200px;
-        margin-top: 2%;
-    }
-    
-    #bodytext {
-        margin-top: 42%;
-    }
-
-    header {
-        margin-top: 28%;
-    }
-}
-
-@media (max-width: 740px) {
-    #bodytext {
-        margin-top: 45%;
-    }
-}
-
-@media (max-width: 670px) {
-    #bodytext {
-        font-size: 14px;
-    }
-}
-
-@media (max-width: 650px) {
-    header {
-        margin-top: 35%;
-    }
-
-    #bodytext {
-        margin-top: 55%;
-    }
-}
-
-@media (max-width: 600px) {
-    #bodytext {
-        margin-top: 58%;
-    }
-}
-
-@media (max-width: 524px) {
-    header {
-        margin-top: 40%;
-        width: 300px;
-    }
-
-    #bodytext {
-        margin-top: 64%;
-    }
-
-    h1 {
-        font-size: x-large;
-    }
-
-    h3 { 
-        font-size: medium;
-    }
-}
-
-@media (max-width: 414px) {
-    #faceshot {
-        margin-top: 17%;
-    }
-
-    header {
-        margin-top: 65%;
-    }
-
-    #bodytext {
-        margin-top: 95%;
-        width: 100%;
-    }
-
-    #linkedin-icon, #email-icon, #github-icon {
-        width: 40px;
-    }
-
+/*@media (max-width: 768px) {
     footer {
-        padding-bottom: 10%;
+        font-size: 3.5rem;
     }
-
-    #github-icon {
-        margin-bottom:  2.5%;
-    }
-}
-
-@media (max-width: 375px) {
-    #faceshot {
-        margin-top: 18%;
-    }
-
-    header {
-        margin-top: 80%;
-        height: 100px;
-        width: 200px;
-    }
-
-    #bodytext {
-        margin-top: 110%;
-        width: 100%;
-        font-size: 12px;
-    } 
-
-    h1 {
-        font-size: large;
-    }
-
-    h3 {
-        font-size: small;
-    }
-}
-
-@media (max-width: 320px) {
-    header {
-        margin-top: 75%;
-    }
-
-    #bodytext {
-        font-size: 11px;
-        margin-top: 105%;
-    }
-}
-
-@media (min-height: 1300px) {
-    #faceshot {
-        margin-top: 14%;
-        width: 350px;
-        height: 350px;
-    }
-
-    #faceshot-image {
-        width: 350px;
-        height: 350px;
-    }
-
-    header {
-        margin-top: 50%;
-        width: 450px;
-    }
-
-    h1 {
-        font-size: 55px;
-    }
-
-    h3 {
-        font-size: 38px;
-    }
-
-    #bodytext {
-        font-size: 25px;
-        margin-top: 75%;
-    }
-}
+}*/
