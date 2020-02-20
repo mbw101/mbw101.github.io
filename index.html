@@ -3,8 +3,9 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no, user-scalable=no">
         <meta name="description" content="Personal website for Malcolm Wright. Provides links to my important places to look at.">
+        <meta name="keywords" content="malcolm wright, malcolm, wright, malcolmwright, computer science">
         <meta name="author" content="Malcolm Wright">
 
         <title>Malcolm Wright</title>
@@ -18,32 +19,34 @@
     </head>
 
     <body>
-        <div class="container-sm border">
-            <div class="row justify-content-center">
-                <!-- Links to my github, linkedin, and my email -->
-                <div class="col-md-1 col-centered border">
-                    <a class="github" href="https://github.com/mbw101" target="_blank">
-                        <img id="github-icon" src="img/GitHub_Logo.png">
-                    </a>
-                </div>
+        <div id="form">
+            <div class="container-sm border">
+                <div class="mt-2 row justify-content-center">
+                    <!-- Links to my github, linkedin, and my email -->
+                    <div class="pt-2 col-sm-1 col-centered border">
+                        <a class="github" href="https://github.com/mbw101" target="_blank">
+                            <img id="github-icon" src="img/GitHub_Logo.png">
+                        </a>
+                    </div>
 
-                <div class="col-md-2 border">
-                    <a class="linkedin" href="https://www.linkedin.com/in/malcolmbwright" target="_blank">
-                        <img id="linkedin-icon" src="img/LI-In-Bug.png">
-                    </a>
-                </div>
+                    <div class="pt-1 col-sm-2 border">
+                        <a class="linkedin" href="https://www.linkedin.com/in/malcolmbwright" target="_blank">
+                            <img id="linkedin-icon" src="img/LI-In-Bug.png">
+                        </a>
+                    </div>
 
-                <div class="col-md-3 border">
-                    <a class="email" href="mailto:wrightmbw01@gmail.com" target="_blank">
-                        <img id="email-icon" src="img/email.png">
-                    </a>
-                </div>
-            </div> 
-            
-            <div class="row"> 
-                <!-- A link to my resume -->
-                <div class="col-xl border">
-                    <a class="resume" href="">Resume</a>
+                    <div class="col-sm-1 border">
+                        <a class="email" href="mailto:wrightmbw01@gmail.com" target="_blank">
+                            <img id="email-icon" src="img/email.png">
+                        </a>
+                    </div>
+                </div> 
+                
+                <div class="row"> 
+                    <!-- A link to my resume. The d-none part only displays on small screens and larger -->
+                    <div class="d-none d-sm-block col-xl border">
+                        <a class="resume" href="">Resume</a>
+                    </div>
                 </div>
             </div>
         </div>

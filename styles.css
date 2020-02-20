@@ -3,6 +3,10 @@
     width: 50px;
 }
 
+#github-icon {
+    height: 50%;
+}
+
 #bodytext {
     /* width and height */
     width: 80%;
@@ -49,12 +53,12 @@ body {
 
 .container {
     display: flex;
-    width: 100%;
+    width: 25%;
 }
 
-.col-md {
-    justify-content: center;
-}
+/*#form {
+    margin-top: 25%;
+}*/
 
 /* media queries */
 /*@media (max-width: 768px) {
