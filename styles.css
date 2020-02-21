@@ -58,13 +58,17 @@ body {
     width: 25%;
 }
 
-/*#form {
-    margin-top: 25%;
-}*/
-
 /* media queries */
-/*@media (max-width: 768px) {
-    footer {
-        font-size: 3.5rem;
+@media (max-width: 575.98px) {
+    #github-icon {
+        height: 100%;
     }
-}*/
+
+    .bodyText {
+        font-size: 14px;
+    }
+
+    .container-fluid {
+        padding-top: 15%;
+    }
+}
