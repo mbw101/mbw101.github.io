@@ -60,12 +60,24 @@ body {
 
 /* media queries */
 @media (max-width: 575.98px) {
+    .titleText {
+        padding-bottom: 10%;
+    }
+
     #github-icon {
         height: 100%;
     }
 
-    .bodyText {
-        font-size: 14px;
+    #github {
+        padding-bottom: 3%;
+    }
+
+    #linkedin {
+        padding-bottom: 2%;
+    }
+
+    .description {
+        font-size: 13px;
     }
 
     .container-fluid {

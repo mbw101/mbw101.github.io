@@ -20,40 +20,47 @@
 
     <body>
         <div class="fullContainer">
+            <!-- This is the faceshot section -->
             <div class="faceshot header">
                 <img id="faceshot-image" src="img/faceshot.png">
             </div>
 
+            <!-- This section represents the text that is in the middle of the website. -->
             <div class="bodyText">
-                <h1 class="name">Malcolm Wright</h1>
-                <h3 class="hometown">Stratford, ON, Canada</h4>
+                <div class="titleText">
+                    <h1 class="name">Malcolm Wright</h1>
+                    <h4 class="hometown">Stratford, ON, Canada</h4>
+                </div>
 
-                <!-- Position/school -->
-                <p class="position">First year computer science student at the University of Guelph
-                    <br>in Bachelor of Computing, Computer Science Co-op, 2019-2024</h4>
+                <div class="description">
+                    <!-- Position/school -->
+                    <p class="position">First year computer science student at the University of Guelph
+                        <br>in Bachelor of Computing, Computer Science Co-op, 2019-2024</h4>
 
-                <!-- Interest/hobbies of mine -->
-                <p class="interests">My interests exluding computer science: basketball, NBA,  
-                    <br>PC Gaming and Hardware, weightlifting, Narcos,
-                    <br>documentaries, and Rocket League!</p> 
+                    <!-- Interest/hobbies of mine -->
+                    <p class="interests">My interests exluding computer science: basketball, NBA,  
+                        <br>PC Gaming and Hardware, weightlifting, Narcos,
+                        <br>documentaries, and Rocket League!</p> 
+                </div>
             </div>
 
+            <!-- This section represents the bottom section with the icons and resume -->
             <div class="container-fluid">
                 <div class="mt-2 row justify-content-center">
                     <!-- Links to my github, linkedin, and my email -->
-                    <div class="pt-2 col-md-1 col-centered border">
+                    <div class="pt-2 col-md-1 col-centered" id="github">
                         <a class="github" href="https://github.com/mbw101" target="_blank">
                             <img id="github-icon" src="img/GitHub_Logo.png">
                         </a>
                     </div>
 
-                    <div class="pt-1.5 col-sm-2 border">
+                    <div class="pt-1.5 col-sm-2" id="linkedin">
                         <a class="linkedin" href="https://www.linkedin.com/in/malcolmbwright" target="_blank">
                             <img id="linkedin-icon" src="img/linkedin.png">
                         </a>
                     </div>
 
-                    <div class="col-sm-1 border">
+                    <div class="col-sm-1">
                         <a class="email" href="mailto:wrightmbw01@gmail.com" target="_blank">
                             <img id="email-icon" src="img/email.png">
                         </a>
@@ -62,7 +69,7 @@
                 
                 <div class="row"> 
                     <!-- A link to my resume. The d-none part only displays on small screens and larger -->
-                    <div class="d-none d-sm-block col-xl border">
+                    <div class="d-none d-sm-block col-xl">
                         <a class="resume" href="">Resume</a>
                     </div>
                 </div>
