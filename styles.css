@@ -18,6 +18,8 @@
 .bodyText {
     padding: 2%;
     text-align: center;
+    /* border: black;
+    border-style: solid; */
 }
 
 /* global styles */
@@ -42,6 +44,11 @@ body {
     font-weight: 400;
     height: 100%;
     text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .2);
+    
+    /* center the div in the middle of the page */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .row {
@@ -54,8 +61,8 @@ body {
 }
 
 .container {
-    display: flex;
-    width: 25%;
+    /*border: black;
+    border-style: solid;*/
 }
 
 /* media queries */
