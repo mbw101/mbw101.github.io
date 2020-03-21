@@ -60,11 +60,6 @@ body {
     text-align: center;
 }
 
-.container {
-    /*border: black;
-    border-style: solid;*/
-}
-
 /* media queries */
 @media (max-width: 575.98px) {
     .titleText {

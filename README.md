@@ -9,3 +9,7 @@ Here is the link: https://mbw101.github.io
 ## Technologies 
 * HTML/CSS
 * Bootstrap 4
+
+## TODO
+* Include resume file
+* Fix bug on mobile where faceshot is cut off a bit
