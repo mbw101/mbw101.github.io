@@ -10,5 +10,5 @@ Here is the link: https://mbw101.github.io
 * HTML/CSS
 * Bootstrap 4
 
-## TODO
-* Include resume file
+## TODO 
+* Update body text
