@@ -18,8 +18,8 @@
 .bodyText {
     padding: 2%;
     text-align: center;
-    /* border: black;
-    border-style: solid; */
+    width: 50%;
+    margin: auto;
 }
 
 /* global styles */
@@ -60,6 +60,16 @@ body {
     text-align: center;
 }
 
+#copyright {
+    margin: auto;
+    border: 3px solid green;
+    text-align: center;
+}
+
+.position, .interests {
+    word-break: break-word;
+}
+
 /* media queries */
 @media (max-width: 575.98px) {
     body {
@@ -86,7 +96,24 @@ body {
         font-size: 13px;
     }
 
-    .container-fluid {
-        padding-top: 15%;
+    .bodyText {
+        padding: 2%;
+        text-align: center;
+        margin: auto;
+        width: 100%;
+    }
+}
+
+@media (max-width: 414px) {
+    
+}
+
+@media (max-width: 360px) {
+
+}
+
+@media (max-width: 320px) {
+    .name {
+        font-size: 24px;
     }
 }
