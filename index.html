@@ -13,7 +13,9 @@
 
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        
+        <!-- For font awesome icons -->
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
         <!-- My personal css -->
         <link rel="stylesheet" href="styles.css">
     </head>
@@ -48,27 +50,29 @@
                 </div>
             </div>
 
-            <!-- TODO: Add a blog section for co-op terms and a portfolio section -->
+            <!-- TODO: Add a blog section for co-op terms  -->
 
             <!-- This section represents the bottom section with the icons and resume -->
             <div class="container-fluid">
-                <div class="mt-2 row justify-content-center">
+                <div class="mt-2 row justify-content-center" id="row_icons">
                     <!-- Links to my github, linkedin, and my email -->
-                    <div class="pt-2 col-md-1 col-centered" id="github">
+                    <div class="col-md-1 col-centered" id="github">
                         <a class="github" href="https://github.com/mbw101" target="_blank">
-                            <img id="github-icon" src="img/GitHub_Logo.png">
+                            <!-- <img id="github-icon" src="img/GitHub_Logo.png"> -->
+                            <i class="fa fa-github" id="github-icon"></i>
                         </a>
                     </div>
 
-                    <div class="pt-1.5 col-sm-2" id="linkedin">
+                    <div class="col-sm-2" id="linkedin">
                         <a class="linkedin" href="https://www.linkedin.com/in/malcolmbwright" target="_blank">
-                            <img id="linkedin-icon" src="img/linkedin.png">
+                            <!-- <img id="linkedin-icon" src="img/linkedin.png"> -->
+                            <i class="fa fa-linkedin" id="linkedin-icon"></i>
                         </a>
                     </div>
 
                     <div class="col-sm-1">
                         <a class="email" href="mailto:wrightmbw01@gmail.com" target="_blank">
-                            <img id="email-icon" src="img/email.png">
+                            <i class="fa fa-envelope-o" id="email-icon"></i>
                         </a>
                     </div>
                 </div> 
@@ -81,9 +85,9 @@
                 </div>
             </div>
 
-            <div id="copyright" class="pt-2">
+            <!-- <div id="copyright" class="pt-2">
                 <p id="copyrightText">Copyright &copy; 2020 Malcolm Wright</p>
-            </div>
+            </div> -->
         </div>
 
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>

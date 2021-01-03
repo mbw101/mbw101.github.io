@@ -1,6 +1,7 @@
 /* class styles*/
 #linkedin-icon, #email-icon, #github-icon {
     width: 50px;
+    color: #337ab7;
 }
 
 #github-icon {
@@ -13,6 +14,10 @@
     /* width and height */
     width: 200px;
     height: 200px;
+}
+
+.container {
+    max-width: 1000px;
 }
 
 .bodyText {
@@ -28,7 +33,7 @@ img {
 }
 
 a, a:hover, a:focus, a:visited {
-    color: #626fc1;
+    color: #99647a;
     text-decoration: solid;
 }
 
@@ -52,8 +57,13 @@ body {
 }
 
 .row {
+    color: #626fc1;
     text-align: center;
     bottom: 0;
+}
+
+#row_icons {
+    flex-wrap: nowrap;
 }
 
 .faceshot {
@@ -80,7 +90,7 @@ body {
         padding-bottom: 10%;
     }
 
-    #github-icon {
+    /* #github-icon {
         height: 100%;
     }
 
@@ -90,7 +100,7 @@ body {
 
     #linkedin {
         padding-bottom: 2%;
-    }
+    } */
 
     .description {
         font-size: 13px;
