@@ -7,6 +7,3 @@ It's a single page website that utilizes HTML, CSS, and Bootstrap that contains 
 ## Technologies 
 * HTML/CSS
 * Bootstrap 4
-
-## TODO 
-* Update body text
