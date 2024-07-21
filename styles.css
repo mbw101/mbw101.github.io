@@ -1,35 +1,5 @@
 /* Mobile first design */
-
-/* class styles*/
-#linkedin-icon,
-#email-icon,
-#github-icon {
-    width: 50px;
-    color: #337ab7;
-}
-
-/* headshot img tag */
-#faceshot-image {
-    border-radius: 60%;
-    width: 175px;
-    height: 175px;
-}
-
-/* head shot div class */
-.faceshotDiv {
-    text-align: center;
-}
-
-.bodyText {
-    text-align: center;
-    margin: auto;
-}
-
-/* global styles */
-img {
-    max-width: 100%;
-}
-
+/* global HTML tag styles */
 a,
 a:hover,
 a:focus,
@@ -50,61 +20,78 @@ body {
     font-weight: 400;
     height: 100%;
     text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .2);
+}
 
+/* CLASS STYLES */
+.roundedHeadshot {
+    border-radius: 60%;
+}
+
+/* head shot div class */
+.faceshotDiv {
+    text-align: center;
+}
+
+.bodyText {
+    text-align: center;
+    margin: auto;
 }
 
 /* used for centering the div in the middle of the page */
 .parentContainer {
     height: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 
 .row {
-    color: #626fc1;
-    text-align: center;
-    bottom: 0;
-}
-
-/* #row_icons {
-    flex-wrap: nowrap;
-} */
-
-#copyright {
-    margin: auto;
-    /* border: 3px solid green; */
     text-align: center;
 }
 
-.position,
-.interests {
+.bodyStyle {
     word-break: break-word;
 }
 
-@media (min-width: 575.98px) {
-    
+.iconClass {
+    color: #337ab7;
 }
 
+/* ID STYLES */
+
+/* headshot img tag */
+#faceshot-image {
+    width: 175px;
+    height: 175px;
+}
 
 /* TABLET LAYOUT */
-/* @media (min-width: 550px) {
-    body {
-        background-color: red;
-        color: #626fc1;
-        font-family: system-ui, sans-serif;
-        line-height: 1.5;
-        font-weight: 400;
-        height: 100%;
-        text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .2);
+@media (min-width: 760px) {
+    .container {
+        text-align: center;
+        margin: auto;
+        width: 65%;
+    }
+}
+
+/* LAPTOP LAYOUT */
+@media (min-width: 1020px) {
+    #faceshot-image {
+        width: 200px;
+        height: 200px;
     }
 
-    .faceshotDiv {
-        display: none;
+    .container {
+        text-align: center;
+        margin: auto;
+        width: 50%;
     }
-} */
+}
 
-/* TODO: Implement dark mode theme! */
-@media (prefers-color-scheme: dark) {
-    /* Find 2 colours that work well - regular text and link text */
+/* Special tablet size */
+@media (min-width: 1020px) and (min-height: 1360px) {
+    .container {
+        text-align: center;
+        margin: auto;
+        width: 100% !important;
+    }
 }
