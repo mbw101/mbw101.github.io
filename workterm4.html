@@ -1,132 +1,210 @@
 <!DOCTYPE html>
 
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no, user-scalable=no">
-        <meta name="description" content="Personal website for Malcolm Wright. Provides links to my important places to look at.">
-        <meta name="keywords" content="malcolm wright, malcolm, wright, malcolmwright, computer science">
-        <meta name="author" content="Malcolm Wright">
 
-        <title>Malcolm Wright</title>
-        <link rel="icon" href="img/icon.ico">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no, user-scalable=no">
+    <meta name="description"
+        content="Personal website for Malcolm Wright. Provides links to my important places to look at.">
+    <meta name="keywords" content="malcolm wright, malcolm, wright, malcolmwright, computer science">
+    <meta name="author" content="Malcolm Wright">
 
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <!-- For font awesome icons -->
-        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <title>Malcolm Wright</title>
+    <link rel="icon" href="img/icon.ico">
 
-        <!-- My personal css -->
-        <link rel="stylesheet" href="styles.css">
-    </head>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- For font awesome icons -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
-    <body>
-        <div class="test">
+    <!-- My personal css -->
+    <link rel="stylesheet" href="styles.css">
+</head>
 
-            <!-- This section represents the text that is in the middle of the website. -->
-            <div class="bodyText">
-                <h2>Introduction</h2>
-                <p>My name is Malcolm Wright, and I am a fourth-year student at the University of Guelph. This report will detail the goals I made for myself, and the plan I made to achieve these desired goals. Furthermore, this blog will go over my role as a Software Engineer intern at Wealthsimple during the winter 2023 semester. I've had the opportunity to collaborate with talented individuals in the industry.</p>
-               
-                <h2>Employer Information</h2>
-                <p>Wealthsimple is a Canadian-based fintech company in Toronto that was founded in September 2014. It is a digital investing service that offers automated and low-cost investment management to individuals in Canada. Their mission is to help everyone achieve financial freedom, no matter who they are or how much money they have. Over the past few years, Wealthsimple has grown to include tax services, savings and cash accounts, do-it-yourself investing, and options trading just to name a few.</p>
-                <br>
-                 <img src="wealthsimple.png"/>
-                <br>
-                <h2>Options Overview</h2>
-                <p>I will give a quick overview of what Options are since I was an intern on the Options service team. Options are financial contracts that give the buyer the right, but not the obligation, to buy or sell an underlying asset at a predetermined price and date. They are used as a tool for hedging risk, speculating on price movements, and generating income. There are two types of options: CALL options and PUT options. A call option gives the buyer the right to buy the underlying asset at a predetermined price, while a put option gives the buyer the right to sell the underlying asset at a predetermined price. This predetermined price is referred to as the strike price of the option. The price a buyer pays for an option is called the premium price. Each option contract comes with an expiration date which is the last day you can exercise the contract before they expire worthless. This fact is critical to the Autosell project which I worked on for most of my term, I will discuss this later in the blog. Exercising a contract or option refers to buying or selling the underlying asset for the strike price.</p>
-                <p>Here are some terms that I will discuss later, so I will define what they mean. The terms "in the money" and "out of the money" refer to the relationship between the current market price of the underlying asset and the strike price of the option. An option is said to be "in the money" if the current market price of the underlying asset is favorable to the holder of the option. For a call option, this means that the current market price of the underlying asset is higher than the strike price of the option, allowing the holder to potentially buy the asset at a discount. For a put option, this means that the current market price of the underlying asset is lower than the strike price of the option, allowing the holder to potentially sell the asset at a premium. Conversely, an option is said to be "out of the money" if the current market price of the underlying asset is not favorable to the holder of the option. Out of the money is the opposite scenario of in the money when considering call and put options.</p>
+<body>
+    <div class="test">
 
-                
-                <h2>Job Description</h2>
-                <p>My role was a software engineer intern on the Options service team. Options service is a backend team that works in Kotlin and uses systems such as Kafka, SQS, and DataDog. Options service consists of a set of scheduled jobs and asynchronous SQS and Kafka listeners that handle operations, one of which handles the new Autosell feature. Options-service consists of a main API and five jobs that run on pre-defined times on certain days.</p>
-                <p>During my onboarding and first few weeks, I was focused on completing tech debt tasks. This gave me a great opportunity to get introduced to the codebase by generating impact for the team with a smaller investment of time. For the rest of the co-op term, my focus was on the auto-sell project which the first phase was fully completed during my co-op term at Wealthsimple. Throughout my time working on the Autosell project, I learned how to create a cron job and an SQS queue to start the autosell process. What Autosell does is automatically sell to close any in-the-money options contracts that can't be exercised 30 minutes before market close. As a result, clients can realize the value of their contracts even when they aren't monitoring the market - so they don't have to worry about losing potential gains when life gets in the way. </p>
+        <!-- This section represents the text that is in the middle of the website. -->
+        <div class="bodyText">
+            <h2>Introduction</h2>
+            <p>My name is Malcolm Wright, and I am a fourth-year student at the University of Guelph. This report will
+                detail the goals I made for myself, and the plan I made to achieve these desired goals. Furthermore,
+                this blog will go over my role as a Software Engineer intern at Wealthsimple during the winter 2023
+                semester. I've had the opportunity to collaborate with talented individuals in the industry.</p>
 
-                <h2>Goals</h2>
-                <h6>Get up to speed with Kotlin backend development</h6>
-                <h6>Become familiar with the remaining technologies the project uses including maven, Spring, Kafka, and SQS</h6>
-                <h6>Be proactive with documentation and be aware of what's written and what's not written for the Options service team</h6>
-                <h6>Show up to the office in-person at least once a week</h6>
-                <h6>Understand what Wealthsimple Options is as a team and the business impact of Options.</h6>
-                
-                <h2>Reflection</h2>
-                <p>Reflecting on this experience as a whole, it was amazing and was everything I had hoped. This was my true first experience working as a backend engineer with only one prior experience as a full-stack engineer. Options-service is totally headless without a web interface. It is fully asynchronous through the use of Kafka streams and SQS queues. This is the first time I've encountered that pattern, so I had to get familiar with it throughout the term. As a result, I learned so many techniques and skills from all the intelligent people I worked with. I also received great mentorship from a software engineer at the company for the co-op term where I could formulate a mentorship goal and ask her any questions I had! Throughout this mentorship process, I was able to develop habits outside of my daily work such as listening to tech podcasts to further develop the craft.</p>
-                <p>The sizable intern cohort was a great way to meet fellow interns from all different backgrounds and schooling. It was incredible getting the experience of going to the office in Toronto which was a first for me. It was inspiring to have another opportunity meeting other interns and being in downtown Toronto for work. I am grateful that I had this opportunity to network and make meaningful connections.</p>
-                <p>Lastly, I wanted to reflect on being a part of the phase 1 of the autosell project, which was great. I never got an opportunity to be on a project like that from the start, and it was awesome being able to contribute and collaborate with the rest of the team. It really felt like I was a SWE 1, I was able to learn and work on meaningful tickets to the team. It was awesome to experience my first production testing with my team and see the work that we've done over many sprints!</p>
+            <h2>Employer Information</h2>
+            <p>Wealthsimple is a Canadian-based fintech company in Toronto that was founded in September 2014. It is a
+                digital investing service that offers automated and low-cost investment management to individuals in
+                Canada. Their mission is to help everyone achieve financial freedom, no matter who they are or how much
+                money they have. Over the past few years, Wealthsimple has grown to include tax services, savings and
+                cash accounts, do-it-yourself investing, and options trading just to name a few.</p>
+            <br>
+            <img src="img/wealthsimple.png" />
+            <br>
+            <h2>Options Overview</h2>
+            <p>I will give a quick overview of what Options are since I was an intern on the Options service team.
+                Options are financial contracts that give the buyer the right, but not the obligation, to buy or sell an
+                underlying asset at a predetermined price and date. They are used as a tool for hedging risk,
+                speculating on price movements, and generating income. There are two types of options: CALL options and
+                PUT options. A call option gives the buyer the right to buy the underlying asset at a predetermined
+                price, while a put option gives the buyer the right to sell the underlying asset at a predetermined
+                price. This predetermined price is referred to as the strike price of the option. The price a buyer pays
+                for an option is called the premium price. Each option contract comes with an expiration date which is
+                the last day you can exercise the contract before they expire worthless. This fact is critical to the
+                Autosell project which I worked on for most of my term, I will discuss this later in the blog.
+                Exercising a contract or option refers to buying or selling the underlying asset for the strike price.
+            </p>
+            <p>Here are some terms that I will discuss later, so I will define what they mean. The terms "in the money"
+                and "out of the money" refer to the relationship between the current market price of the underlying
+                asset and the strike price of the option. An option is said to be "in the money" if the current market
+                price of the underlying asset is favorable to the holder of the option. For a call option, this means
+                that the current market price of the underlying asset is higher than the strike price of the option,
+                allowing the holder to potentially buy the asset at a discount. For a put option, this means that the
+                current market price of the underlying asset is lower than the strike price of the option, allowing the
+                holder to potentially sell the asset at a premium. Conversely, an option is said to be "out of the
+                money" if the current market price of the underlying asset is not favorable to the holder of the option.
+                Out of the money is the opposite scenario of in the money when considering call and put options.</p>
 
-                <h2>Conclusion</h2>
-                <p>Thank you for taking the time to read my Winter 2023 work term report! As I mentioned before, I really enjoyed my experience at Wealthsimple, it was a very fruitful co-op term for many reasons. I got to try a back-end role which I was interested in doing more of since I only got an exposure as a full-stack co-op in a previous term. I've discovered that I enjoy working on the back-end, and I would be eager to work in another back-end role.</p>
-                <h2>Acknowledgements</h2>
-                <p>I would like to give a huge thank you to my amazing manager, Vibhav Agrawal, for allowing me to join the Options Service team and be a contributor to the autosell project. He gave me a great opportunity to really dive deep into the work and learn so much throughout the co-op term which I am appreciative of. I would also like to thank my mentor, Anand Patel, for helping me learn along the way and for giving me the necessary mentorship I needed. Similarly, thank you Mick Minicki for giving pointers and advice for how to approach and communicate your intentions and thoughts using code. Finally, I would like to call out the rest of my teammates, David Ye, Olly Squires, and the rest of the Options team for being a great team to be a part of.</p>
-            </div>
 
-            <!-- Here is where the rest of the work term reports will be as well as the home link -->
-            <div class="homeContainer-fluid">
-                <div class="row justify-content-center" id="workterm_reports">
-                    <div class="col-md-auto">
-                        <a class="workterm1" href="workterm1.html">Work Term Report #1</a>
-                    </div>
-                    <div class="col-md-auto">
-                        <a class="workterm2" href="workterm2.html">Work Term Report #2</a>
-                    </div>
-                    <div class="col-md-auto">
-                        <a class="workterm3" href="workterm3.html">Work Term Report #3</a>
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-md-auto">
-                        <a class="workterm4" href="workterm4.html">Work Term Report #4</a>
-                    </div>
-                    <div class="col-md-auto">
-                        <a class="workterm5" href="workterm5.html">Work Term Report #5</a>
-                    </div>
-                </div>
-            </div>
+            <h2>Job Description</h2>
+            <p>My role was a software engineer intern on the Options service team. Options service is a backend team
+                that works in Kotlin and uses systems such as Kafka, SQS, and DataDog. Options service consists of a set
+                of scheduled jobs and asynchronous SQS and Kafka listeners that handle operations, one of which handles
+                the new Autosell feature. Options-service consists of a main API and five jobs that run on pre-defined
+                times on certain days.</p>
+            <p>During my onboarding and first few weeks, I was focused on completing tech debt tasks. This gave me a
+                great opportunity to get introduced to the codebase by generating impact for the team with a smaller
+                investment of time. For the rest of the co-op term, my focus was on the auto-sell project which the
+                first phase was fully completed during my co-op term at Wealthsimple. Throughout my time working on the
+                Autosell project, I learned how to create a cron job and an SQS queue to start the autosell process.
+                What Autosell does is automatically sell to close any in-the-money options contracts that can't be
+                exercised 30 minutes before market close. As a result, clients can realize the value of their contracts
+                even when they aren't monitoring the market - so they don't have to worry about losing potential gains
+                when life gets in the way. </p>
 
-            <!-- This section represents the bottom section with the icons and resume -->
-            <div class="container-fluid">
-                <div class="mt-2 row justify-content-center" id="row_icons">
-                    <!-- Links to my github, linkedin, and my email -->
-                    <div class="col-md-1 col-centered" id="github">
-                        <a class="github" href="https://github.com/mbw101" target="_blank">
-                            <!-- <img id="github-icon" src="img/GitHub_Logo.png"> -->
-                            <i class="fa fa-github" id="github-icon"></i>
-                        </a>
-                    </div>
+            <h2>Goals</h2>
+            <h6>Get up to speed with Kotlin backend development</h6>
+            <h6>Become familiar with the remaining technologies the project uses including maven, Spring, Kafka, and SQS
+            </h6>
+            <h6>Be proactive with documentation and be aware of what's written and what's not written for the Options
+                service team</h6>
+            <h6>Show up to the office in-person at least once a week</h6>
+            <h6>Understand what Wealthsimple Options is as a team and the business impact of Options.</h6>
 
-                    <div class="col-sm-2" id="linkedin">
-                        <a class="linkedin" href="https://www.linkedin.com/in/malcolmbwright" target="_blank">
-                            <!-- <img id="linkedin-icon" src="img/linkedin.png"> -->
-                            <i class="fa fa-linkedin" id="linkedin-icon"></i>
-                        </a>
-                    </div>
+            <h2>Reflection</h2>
+            <p>Reflecting on this experience as a whole, it was amazing and was everything I had hoped. This was my true
+                first experience working as a backend engineer with only one prior experience as a full-stack engineer.
+                Options-service is totally headless without a web interface. It is fully asynchronous through the use of
+                Kafka streams and SQS queues. This is the first time I've encountered that pattern, so I had to get
+                familiar with it throughout the term. As a result, I learned so many techniques and skills from all the
+                intelligent people I worked with. I also received great mentorship from a software engineer at the
+                company for the co-op term where I could formulate a mentorship goal and ask her any questions I had!
+                Throughout this mentorship process, I was able to develop habits outside of my daily work such as
+                listening to tech podcasts to further develop the craft.</p>
+            <p>The sizable intern cohort was a great way to meet fellow interns from all different backgrounds and
+                schooling. It was incredible getting the experience of going to the office in Toronto which was a first
+                for me. It was inspiring to have another opportunity meeting other interns and being in downtown Toronto
+                for work. I am grateful that I had this opportunity to network and make meaningful connections.</p>
+            <p>Lastly, I wanted to reflect on being a part of the phase 1 of the autosell project, which was great. I
+                never got an opportunity to be on a project like that from the start, and it was awesome being able to
+                contribute and collaborate with the rest of the team. It really felt like I was a SWE 1, I was able to
+                learn and work on meaningful tickets to the team. It was awesome to experience my first production
+                testing with my team and see the work that we've done over many sprints!</p>
 
-                    <div class="col-sm-1">
-                        <a class="email" href="mailto:wrightmbw01@gmail.com" target="_blank">
-                            <i class="fa fa-envelope-o" id="email-icon"></i>
-                        </a>
-                    </div>
-                </div> 
-                
-                <div class="row pt-3 justify-content-center"> 
-                    <!-- A link to my resume. The d-none part only displays on small screens and larger -->
-                    <div class="d-sm-block p-3 col-centered" id="home">    
-                        <a class="home" href="index.html">Home</a>
-                    </div>
-
-                    <div class="d-sm-block p-3 col-centered"> <!-- d-none d-sm-block col-xl pt-3 -->
-                        <a class="resume" href="resume.pdf" target="_blank">Resume</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- <div id="copyright" class="pt-2">
-                <p id="copyrightText">Copyright &copy; 2020 Malcolm Wright</p>
-            </div> -->
+            <h2>Conclusion</h2>
+            <p>Thank you for taking the time to read my Winter 2023 work term report! As I mentioned before, I really
+                enjoyed my experience at Wealthsimple, it was a very fruitful co-op term for many reasons. I got to try
+                a back-end role which I was interested in doing more of since I only got an exposure as a full-stack
+                co-op in a previous term. I've discovered that I enjoy working on the back-end, and I would be eager to
+                work in another back-end role.</p>
+            <h2>Acknowledgements</h2>
+            <p>I would like to give a huge thank you to my amazing manager, Vibhav Agrawal, for allowing me to join the
+                Options Service team and be a contributor to the autosell project. He gave me a great opportunity to
+                really dive deep into the work and learn so much throughout the co-op term which I am appreciative of. I
+                would also like to thank my mentor, Anand Patel, for helping me learn along the way and for giving me
+                the necessary mentorship I needed. Similarly, thank you Mick Minicki for giving pointers and advice for
+                how to approach and communicate your intentions and thoughts using code. Finally, I would like to call
+                out the rest of my teammates, David Ye, Olly Squires, and the rest of the Options team for being a great
+                team to be a part of.</p>
         </div>
 
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>       
-    </body>
+        <!-- Here is where the rest of the work term reports will be as well as the home link -->
+        <div class="homeContainer-fluid">
+            <div class="row justify-content-center" id="workterm_reports">
+                <div class="col-md-auto">
+                    <a class="workterm1" href="workterm1.html">Work Term Report #1</a>
+                </div>
+                <div class="col-md-auto">
+                    <a class="workterm2" href="workterm2.html">Work Term Report #2</a>
+                </div>
+                <div class="col-md-auto">
+                    <a class="workterm3" href="workterm3.html">Work Term Report #3</a>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-auto">
+                    <a class="workterm4" href="workterm4.html">Work Term Report #4</a>
+                </div>
+                <div class="col-md-auto">
+                    <a class="workterm5" href="workterm5.html">Work Term Report #5</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- This section represents the bottom section with the icons and resume -->
+        <div class="container-fluid">
+            <div class="mt-2 row justify-content-center" id="row_icons">
+                <!-- Links to my github, linkedin, and my email -->
+                <div class="col-md-1 col-centered" id="github">
+                    <a class="github" href="https://github.com/mbw101" target="_blank">
+                        <!-- <img id="github-icon" src="img/GitHub_Logo.png"> -->
+                        <i class="fa fa-github" id="github-icon"></i>
+                    </a>
+                </div>
+
+                <div class="col-sm-2" id="linkedin">
+                    <a class="linkedin" href="https://www.linkedin.com/in/malcolmbwright" target="_blank">
+                        <!-- <img id="linkedin-icon" src="img/linkedin.png"> -->
+                        <i class="fa fa-linkedin" id="linkedin-icon"></i>
+                    </a>
+                </div>
+
+                <div class="col-sm-1">
+                    <a class="email" href="mailto:wrightmbw01@gmail.com" target="_blank">
+                        <i class="fa fa-envelope-o" id="email-icon"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="row pt-3 justify-content-center">
+                <!-- A link to my resume. The d-none part only displays on small screens and larger -->
+                <div class="d-sm-block p-3 col-centered" id="home">
+                    <a class="home" href="index.html">Home</a>
+                </div>
+
+                <div class="d-sm-block p-3 col-centered"> <!-- d-none d-sm-block col-xl pt-3 -->
+                    <a class="resume" href="resume.pdf" target="_blank">Resume</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div id="copyright" class="pt-2">
+                <p id="copyrightText">Copyright &copy; 2020 Malcolm Wright</p>
+            </div> -->
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>

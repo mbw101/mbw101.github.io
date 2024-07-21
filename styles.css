@@ -1,5 +1,7 @@
 /* class styles*/
-#linkedin-icon, #email-icon, #github-icon {
+#linkedin-icon,
+#email-icon,
+#github-icon {
     width: 50px;
     color: #337ab7;
 }
@@ -8,15 +10,17 @@
     height: 70%;
 }
 
+/* headshot img tag */
 #faceshot-image {
     border-radius: 40%;
-
-    /* width and height */
     width: 200px;
     height: 200px;
 }
 
-
+/* head shot div class */
+.faceshotDiv {
+    text-align: center;
+}
 
 .container {
     max-width: 1000px;
@@ -34,7 +38,10 @@ img {
     max-width: 100%;
 }
 
-a, a:hover, a:focus, a:visited {
+a,
+a:hover,
+a:focus,
+a:visited {
     color: #99647a;
     text-decoration: solid;
 }
@@ -47,18 +54,18 @@ body {
     background-color: #fefefe;
     color: #626fc1;
     font-family: system-ui, sans-serif;
-    line-height: 1.5; 
+    line-height: 1.5;
     font-weight: 400;
     height: 100%;
     text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .2);
-    
+
 }
 
 /* used for centering the div in the middle of the page */
 .parentContainer {
     height: 100%;
 
-    display: flex; 
+    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -73,17 +80,14 @@ body {
     flex-wrap: nowrap;
 }
 
-.faceshot {
-    text-align: center;
-}
-
 #copyright {
     margin: auto;
     /* border: 3px solid green; */
     text-align: center;
 }
 
-.position, .interests {
+.position,
+.interests {
     word-break: break-word;
 }
 
@@ -121,13 +125,9 @@ body {
     }
 }
 
-@media (max-width: 414px) {
-    
-}
+@media (max-width: 414px) {}
 
-@media (max-width: 360px) {
-
-}
+@media (max-width: 360px) {}
 
 @media (max-width: 320px) {
     .name {
