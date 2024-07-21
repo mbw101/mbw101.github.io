@@ -1,3 +1,5 @@
+/* Mobile first design */
+
 /* class styles*/
 #linkedin-icon,
 #email-icon,
@@ -6,15 +8,11 @@
     color: #337ab7;
 }
 
-#github-icon {
-    height: 70%;
-}
-
 /* headshot img tag */
 #faceshot-image {
     border-radius: 60%;
-    width: 200px;
-    height: 200px;
+    width: 175px;
+    height: 175px;
 }
 
 /* head shot div class */
@@ -22,14 +20,8 @@
     text-align: center;
 }
 
-.container {
-    max-width: 1000px;
-}
-
 .bodyText {
-    padding: 2%;
     text-align: center;
-    width: 50%;
     margin: auto;
 }
 
@@ -64,7 +56,6 @@ body {
 /* used for centering the div in the middle of the page */
 .parentContainer {
     height: 100%;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -76,9 +67,9 @@ body {
     bottom: 0;
 }
 
-#row_icons {
+/* #row_icons {
     flex-wrap: nowrap;
-}
+} */
 
 #copyright {
     margin: auto;
@@ -91,67 +82,64 @@ body {
     word-break: break-word;
 }
 
-/* media queries */
-@media (max-width: 575.98px) {
+/* As the device gets smaller, apply new styles */
+
+/* @media (max-width: 575.98px) {
     body {
-        align-items: unset;
-    }
-
-    .titleText {
-        padding-bottom: 10%;
-    }
-
-    /* #github-icon {
+        background-color: pink;
+        color: #626fc1;
+        font-family: system-ui, sans-serif;
+        line-height: 1.5;
+        font-weight: 400;
         height: 100%;
+        text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .2);
     }
 
-    #github {
-        padding-bottom: 3%;
+    /* TODO: set padding to 0 for body text */
+} */
+
+/* @media (max-height: 550px) {
+    body {
+        background-color: red;
+        color: #626fc1;
+        font-family: system-ui, sans-serif;
+        line-height: 1.5;
+        font-weight: 400;
+        height: 100%;
+        text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .2);
     }
 
-    #linkedin {
-        padding-bottom: 2%;
+    .faceshotDiv {
+        display: none;
+    }
+} */
+
+/* TABLET LAYOUT */
+/* @media (max-height: 550px) {
+    body {
+        background-color: red;
+        color: #626fc1;
+        font-family: system-ui, sans-serif;
+        line-height: 1.5;
+        font-weight: 400;
+        height: 100%;
+        text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .2);
+    }
+
+    .faceshotDiv {
+        display: none;
+    }
+} */
+
+/* TODO: Implement dark mode theme! */
+@media (prefers-color-scheme: dark) {
+    /* body {
+        background-color: #333;
+        color: #626fc1;
+        font-family: system-ui, sans-serif;
+        line-height: 1.5;
+        font-weight: 400;
+        height: 100%;
+        text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .2);
     } */
-
-    .description {
-        font-size: 13px;
-    }
-
-    .bodyText {
-        padding: 2%;
-        text-align: center;
-        margin: auto;
-        width: 100%;
-    }
-}
-
-@media (max-width: 414px) {}
-
-@media (max-width: 360px) {}
-
-@media (max-width: 320px) {
-    .name {
-        font-size: 24px;
-    }
-
-    #exploreVideo {
-        width: 250px;
-        height: 150px;
-    }
-}
-
-@media (max-height: 600px) {
-    #faceshot-image {
-        margin-top: 1%;
-    }
-
-    .bodyText {
-        padding-top: 0;
-        padding-bottom: 0;
-    }
-
-    #copyrightText {
-        margin-top: 0;
-        margin-bottom: 0;
-    }
 }
