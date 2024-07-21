@@ -82,40 +82,13 @@ body {
     word-break: break-word;
 }
 
-/* As the device gets smaller, apply new styles */
+@media (min-width: 575.98px) {
+    
+}
 
-/* @media (max-width: 575.98px) {
-    body {
-        background-color: pink;
-        color: #626fc1;
-        font-family: system-ui, sans-serif;
-        line-height: 1.5;
-        font-weight: 400;
-        height: 100%;
-        text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .2);
-    }
-
-    /* TODO: set padding to 0 for body text */
-} */
-
-/* @media (max-height: 550px) {
-    body {
-        background-color: red;
-        color: #626fc1;
-        font-family: system-ui, sans-serif;
-        line-height: 1.5;
-        font-weight: 400;
-        height: 100%;
-        text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .2);
-    }
-
-    .faceshotDiv {
-        display: none;
-    }
-} */
 
 /* TABLET LAYOUT */
-/* @media (max-height: 550px) {
+/* @media (min-width: 550px) {
     body {
         background-color: red;
         color: #626fc1;
@@ -133,13 +106,5 @@ body {
 
 /* TODO: Implement dark mode theme! */
 @media (prefers-color-scheme: dark) {
-    /* body {
-        background-color: #333;
-        color: #626fc1;
-        font-family: system-ui, sans-serif;
-        line-height: 1.5;
-        font-weight: 400;
-        height: 100%;
-        text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .2);
-    } */
+    /* Find 2 colours that work well - regular text and link text */
 }
