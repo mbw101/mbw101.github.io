@@ -1,40 +1,9 @@
-/* class styles*/
-#linkedin-icon, #email-icon, #github-icon {
-    width: 50px;
-    color: #337ab7;
-}
-
-#github-icon {
-    height: 70%;
-}
-
-#faceshot-image {
-    border-radius: 40%;
-
-    /* width and height */
-    width: 200px;
-    height: 200px;
-}
-
-
-
-.container {
-    max-width: 1000px;
-}
-
-.bodyText {
-    padding: 2%;
-    text-align: center;
-    width: 50%;
-    margin: auto;
-}
-
-/* global styles */
-img {
-    max-width: 100%;
-}
-
-a, a:hover, a:focus, a:visited {
+/* Mobile first design */
+/* global HTML tag styles */
+a,
+a:hover,
+a:focus,
+a:visited {
     color: #99647a;
     text-decoration: solid;
 }
@@ -47,111 +16,82 @@ body {
     background-color: #fefefe;
     color: #626fc1;
     font-family: system-ui, sans-serif;
-    line-height: 1.5; 
+    line-height: 1.5;
     font-weight: 400;
     height: 100%;
     text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .2);
-    
+}
+
+/* CLASS STYLES */
+.roundedHeadshot {
+    border-radius: 60%;
+}
+
+/* head shot div class */
+.faceshotDiv {
+    text-align: center;
+}
+
+.bodyText {
+    text-align: center;
+    margin: auto;
 }
 
 /* used for centering the div in the middle of the page */
 .parentContainer {
     height: 100%;
-
-    display: flex; 
-    justify-content: center;
+    display: flex;
     align-items: center;
 }
 
 .row {
-    color: #626fc1;
-    text-align: center;
-    bottom: 0;
-}
-
-#row_icons {
-    flex-wrap: nowrap;
-}
-
-.faceshot {
     text-align: center;
 }
 
-#copyright {
-    margin: auto;
-    /* border: 3px solid green; */
-    text-align: center;
-}
-
-.position, .interests {
+.bodyStyle {
     word-break: break-word;
 }
 
-/* media queries */
-@media (max-width: 575.98px) {
-    body {
-        align-items: unset;
-    }
+.iconClass {
+    color: #337ab7;
+}
 
-    .titleText {
-        padding-bottom: 10%;
-    }
+/* ID STYLES */
 
-    /* #github-icon {
-        height: 100%;
-    }
+/* headshot img tag */
+#faceshot-image {
+    width: 175px;
+    height: 175px;
+}
 
-    #github {
-        padding-bottom: 3%;
-    }
-
-    #linkedin {
-        padding-bottom: 2%;
-    } */
-
-    .description {
-        font-size: 13px;
-    }
-
-    .bodyText {
-        padding: 2%;
+/* TABLET LAYOUT */
+@media (min-width: 760px) {
+    .container {
         text-align: center;
         margin: auto;
-        width: 100%;
+        width: 65%;
     }
 }
 
-@media (max-width: 414px) {
-    
-}
-
-@media (max-width: 360px) {
-
-}
-
-@media (max-width: 320px) {
-    .name {
-        font-size: 24px;
-    }
-
-    #exploreVideo {
-        width: 250px;
-        height: 150px;
-    }
-}
-
-@media (max-height: 600px) {
+/* LAPTOP LAYOUT */
+@media (min-width: 1020px) {
     #faceshot-image {
-        margin-top: 1%;
+        width: 200px;
+        height: 200px;
     }
 
-    .bodyText {
-        padding-top: 0;
-        padding-bottom: 0;
+    .container {
+        text-align: center;
+        margin: auto;
+        width: 50%;
     }
+}
 
-    #copyrightText {
-        margin-top: 0;
-        margin-bottom: 0;
+/* Special tablet size */
+@media (min-width: 1020px) and (min-height: 1360px) {
+    .container {
+        text-align: center;
+        margin: auto;
+        width: 100% !important; /* so that we can override width from the Laptop layout*/
     }
 }
