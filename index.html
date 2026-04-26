@@ -29,14 +29,16 @@
 
     /* Avatar */
     .avatar {
-      width: 240px;
-      height: 240px;
+      width: 280px;
+      height: 280px;
       border-radius: 50%;
       object-fit: cover;
       margin: 0 auto 28px;
       display: block;
       /* Placeholder circle if no image */
       background: #d0d4f0;
+      image-rendering: -webkit-optimize-contrast; /* Safari */
+      image-rendering: crisp-edges;               /* Firefox */
     }
 
     /* Name */
@@ -119,7 +121,7 @@
 <body>
   <div class="card">
 
-    <img class="avatar" src="headshot.jpg" alt="Malcolm Wright" />
+    <img class="avatar" src="resized_headshot.png" alt="Malcolm Wright" />
 
     <h1>Malcolm Wright</h1>
     <p class="location">Atlanta, Georgia</p>
